@@ -39,7 +39,7 @@ ASSIGN     C+Y 'Polygon';
 # Display keys: 0 = all, 1 = top, 2 = bottom, 3 = top + bottom. Add Alt to see manufactured layer (with stop mask)
 
 ASSIGN     C+0 'Display all';
-ASSIGN   S+C+0 'Display none';
+ASSIGN   A+C+0 'Display none';
 ASSIGN     C+1 'Display None Top Pads Vias Unrouted Dimension tPlace tOrigins tDocu Milling';
 ASSIGN   A+C+1 'Display None Top Pads Vias Unrouted Dimension tPlace tOrigins tNames tStop Milling';
 ASSIGN     C+2 'Display None Bottom Pads Vias Unrouted Dimension bPlace bOrigins bDocu Milling';
