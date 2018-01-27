@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="2" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -9922,7 +9922,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="TP2" gate="G$1" pin="TP"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="EN" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
 <pinref part="U1" gate="U1" pin="EN"/>
@@ -9932,7 +9932,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <junction x="144.78" y="185.42"/>
 </segment>
 </net>
-<net name="N$7" class="0">
+<net name="BP" class="0">
 <segment>
 <pinref part="U1" gate="U1" pin="BP"/>
 <pinref part="C2" gate="G$1" pin="1"/>
