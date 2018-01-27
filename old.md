@@ -6,18 +6,20 @@
    - Go to "Options" and choose "User Interface".
    - Make sure "Layout" has "Background: Black"
    - Make sure "Schematic has "Background: White"
-- Make a new project
-- Make a new schematic in that project.
 
-## EAGLE Schematic Setup (only need to do once for schematic)
 
+## EAGLE Schematic SETUP (Do only ONCE)
+
+- Open up a schematic (or make a new one).
 - Use the 'scr' command to run `assign-hotkeys-for-schematic.scr`.
 - If you can't pan: use the `scr` command to run `assign-control-for-panning.scr`.
+    
     
 ## New Schematic Setup (Do everytime you start a new schematic
 
 - Control+1 to set the right layers.
-- Add a frame (usually start with 11 x 17, make it smaller later if you want, place on origin.
+- IMPORTANT: Set the grid to `grid 0.05 2 on` (Make the grid 0.05 inches. Make the visible grid 2 x 0.05 = 0.1 inches).
+- Add a frame from the `frame` library (usually start with 11 x 17, make it smaller later if you want, place on origin.
 - Set up your libraries
    - Type `use` to open the Library Manager.
    - In the "In Use" tab, select all and hit "Remove". You don't want all that junk.
@@ -35,10 +37,12 @@
 - Run `ERC` before you make the board.
 - Make the board!
 
+
 ## EAGLE Layout Setup (only need to do this once for layout)
 
 - Use the 'scr' command to run `assign-hotkeys-for-layout.scr`.
 - If you can't pan: use the `scr` command to run `assign-control-for-panning.scr`.
+
 
 ## New Layout Setup (Do everytime you start a new layup)
 
