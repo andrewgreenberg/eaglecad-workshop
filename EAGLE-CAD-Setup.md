@@ -1,6 +1,6 @@
-# Configuring EAGLE 8 to be slightly sane (only need to do once!)
+# Make EAGLE 9 Sane (only need to do once!)
 
-2018/01/26 - From the `eaglecad-things` repo (written for EAGLE 8.6.0). Copy all files in the repo to the right place (SCR and DRU directories).
+2019/01/19 - From the `eaglecad-things` repo (written for EAGLE 9.2.2). Copy all files in the repo to the right place (SCR and DRU directories).
 
 ## Control Panel Setup
 
@@ -20,35 +20,9 @@
 - If you can't pan and you want to:
    - Type `scr` to run a script.
    - Choose `assign-control-for-panning.scr` - now holding down the control key will pan!
-
-
-## Library Setup
-
-- From within the Schematic editor, type `use`
-- Select all Libraries by typing Ctrl-A.
-- Choose 'Remove' (don't worry, isn't deleting anything, and you don't want all that junk).
-- Choose "Available" tab.
-- Expand the `Name` column so you can see the whole name.
-- Click on "Author" to sort the libraries by Author.
-- Select ALL of the SparkFun libraries and choose "Use".
-- Select AdaFruit libraries and choose "Use"
-- Under "EAGLE PCB", select the following vaguely useful libraries:
-   - atmel
-   - crystal
-   - diode
-   - frames
-   - holes
-   - led
-   - pinhead
-   - rcl
-   - supply1
-   - supply2
-   - testpad
-   - transistor
-- Choose "Use"
-- Note that there are lots of other libraries; feel free to browse!
-- Close the Library window.
-
+- Type `scr` to run a script
+- Choose `legacycolors` to make everything actually bearable.
+- Save, so that your changes save.
 
 ## Layout setup
 
@@ -59,5 +33,6 @@
 - If you can't pan and you want to:
    - Type `scr` to run a script.
    - Choose `assign-control-for-panning.scr` - now holding down the control key will pan!
-
-
+- Type `scr` to run a script
+- Choose `legacycolors` to make everything actually bearable.
+- Save, so that your changes save.
