@@ -1,49 +1,73 @@
-# ECE411 "Good keys" Script
-# Assigns Key Bindings for EAGLE CAD
+# EAGLE "Make Usable Hotkeys for board layout" Script
+#
+# Assigns sane key bindings for EAGLE CAD.
 # Thanks to TAB for contributing.
+#
+# 2019-10-19 - Updated for EAGLE 9.5.1, since 9.5.1 has better defaults!
 
 # Allowed modifiers are A+ S+ C+ for Alt, Shift, Control respectively
 # Allowed keys are A-Z 0-9 F1-F12 and BackSpace
 # Assignments to 0-9 A-Z require a Control or Alt modifier
-# It seems that at least in Linux, C+S+[0-9] doesn't work.
 #
 # Note that any key assignments which conflict with the menu bar (e.g. A+F for
 # the File Menu) overwrite the menu bar and you may lose keyboard access to 
 # the menu bar.
 #
 # NOTE: you must run this from within the SCH, BRD, and LBR editors and then
-# EXIT for these keys to stick.
-#
-# Common keys
+# EXIT for these keys to save.
 
-ASSIGN     C+D 'Delete';
+# "Reserved" Menu keys - best not to overwrite these!
+#
+#   C-N: File > New
+#   C-O: File > Open
+#   C-P: File > Print
+#   C-S: File > Save
+#   C-Z: Edit > Undo
+# C+S+Z: Edit > Redo
+
+# Sane EAGLE defaults as of 9.5.1
+#
+#   C+D 'Delete';
+#   C+H 'Hole';
+#   C+I 'Info';
+#   C+L 'SET TOGGLE_CLI';
+#   C+M 'Move'
+# C+S+N 'Name';
+# C+S+P 'Polygon';
+#   C+0 'Display all';
+# A+C+0 'Display none';
+
+
+# Common keys (between SCH, BRD, LBR-SCH, and LBR-BRD)
+
+ASSIGN     C+C 'Copy';
 ASSIGN     C+F 'Window fit';
 ASSIGN     C+G 'Group';
-ASSIGN     C+H 'Smash';
-ASSIGN     C+I 'Info';
-ASSIGN     C+M 'Move';
-ASSIGN   S+C+M 'Mark';
-ASSIGN     C+Q 'Show';
+ASSIGN   C+S+G 'Grid';
+ASSIGN   C+S+M 'Mark';
+ASSIGN   C+S+S 'Show';
 ASSIGN     C+T 'Text';
-ASSIGN     A+X 'Cut';
+ASSIGN     C+V 'Paste';
+ASSIGN   C+S+V 'Value';
+ASSIGN     C+X 'Cut';
 
 # Layout specific keys
 
 ASSIGN     C+E 'DRC';
+ASSIGN   C+S+E 'Errors';
 ASSIGN     C+R 'Route';
 ASSIGN   C+S+R 'Rats';
 ASSIGN   C+S+S 'Split';
-ASSIGN     C+U 'RipUp';
+ASSIGN     C+U 'Ripup';
+ASSIGN   C+S+U 'Ripup @;';
 ASSIGN     C+Y 'Polygon';
 
 # Display keys: 0 = all, 1 = top, 2 = bottom, 3 = top + bottom. Add Alt to see manufactured layer (with stop mask)
 
-ASSIGN     C+0 'Display all';
-ASSIGN   A+C+0 'Display none';
-ASSIGN     C+1 'Display None Top Pads Vias Unrouted Dimension tPlace tOrigins tDocu Milling';
-ASSIGN   A+C+1 'Display None Top Pads Vias Unrouted Dimension tPlace tOrigins tNames tStop Milling';
-ASSIGN     C+2 'Display None Bottom Pads Vias Unrouted Dimension bPlace bOrigins bDocu Milling';
-ASSIGN   A+C+2 'Display None Bottom Pads Vias Unrouted Dimension bPlace bOrigins bNames bStop Milling';
+ASSIGN     C+1 'Display None Top        Pads Vias Unrouted Dimension tPlace        tOrigins          tDocu Milling';
+ASSIGN   A+C+1 'Display None Top        Pads Vias Unrouted Dimension tPlace        tOrigins                     tNames        tStop       Milling';
+ASSIGN     C+2 'Display None     Bottom Pads Vias Unrouted Dimension        bPlace          bOrigins       bDocu Milling';
+ASSIGN   A+C+2 'Display None     Bottom Pads Vias Unrouted Dimension        bPlace          bOrigins                   bNames       bStop Milling';
 ASSIGN     C+3 'Display None Top Bottom Pads Vias Unrouted Dimension tPlace bplace tOrigins bOrigins tDocu bDocu Milling';
-ASSIGN   A+C+3 'Display None Top Bottom Pads Vias Unrouted Dimension tPlace bplace tOrigins bOrigins tNames bNames tStop bStop Milling';
+ASSIGN   A+C+3 'Display None Top Bottom Pads Vias Unrouted Dimension tPlace bplace tOrigins bOrigins            tNames bNames tStop bStop Milling';
 
