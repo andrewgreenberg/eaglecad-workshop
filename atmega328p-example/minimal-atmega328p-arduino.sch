@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="2" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -14720,42 +14720,135 @@ Source: AVX .. aphvc.pdf</description>
 </class>
 </classes>
 <parts>
-<part name="U4" library="SmartPrj" deviceset="ATMEGA328P-" device="PU"/>
-<part name="J1" library="SmartPrj" deviceset="PINHD-2X3" device="" value="3x2 M"/>
+<part name="U4" library="SmartPrj" deviceset="ATMEGA328P-" device="PU">
+<attribute name="MFR" value="Microchip"/>
+<attribute name="MPN" value="ATMEGA328P-PU"/>
+</part>
+<part name="J1" library="SmartPrj" deviceset="PINHD-2X3" device="" value="3x2 M">
+<attribute name="MFR" value="Harwin"/>
+<attribute name="MPN" value="M20-9980345"/>
+</part>
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="P+2" library="supply1" deviceset="+5V" device=""/>
 <part name="P+3" library="supply1" deviceset="+5V" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
-<part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805K" package3d_urn="urn:adsk.eagle:package:23681/2" value="100n"/>
+<part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805K" package3d_urn="urn:adsk.eagle:package:23681/2" value="100n">
+<spice>
+<pinmapping spiceprefix="C">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="MFR" value="Samsung"/>
+<attribute name="MPN" value="CL21B104KBCNNNC"/>
+</part>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
-<part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805K" package3d_urn="urn:adsk.eagle:package:23681/2" value="47u"/>
-<part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805K" package3d_urn="urn:adsk.eagle:package:23681/2" value="47u"/>
+<part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805K" package3d_urn="urn:adsk.eagle:package:23681/2" value="10u">
+<spice>
+<pinmapping spiceprefix="C">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="MFR" value="Samsung"/>
+<attribute name="MPN" value="CL21A106KOQNNNG"/>
+</part>
+<part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805K" package3d_urn="urn:adsk.eagle:package:23681/2" value="10u">
+<spice>
+<pinmapping spiceprefix="C">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="MFR" value="Samsung"/>
+<attribute name="MPN" value="CL21A106KOQNNNG"/>
+</part>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="GND19" library="supply1" deviceset="GND" device=""/>
-<part name="LED1" library="led" deviceset="LED" device="CHIP-LED0805" value="GREEN"/>
+<part name="LED1" library="led" deviceset="LED" device="CHIP-LED0805" value="GREEN">
+<attribute name="MFR" value="Würth Elektronik"/>
+<attribute name="MPN" value="150080GS75000"/>
+</part>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="P+5" library="supply1" deviceset="+5V" device=""/>
-<part name="D1" library="diode" deviceset="DIODE-" device="SMB" value="M7"/>
+<part name="D1" library="diode" deviceset="DIODE-" device="SMB" value="M7">
+<attribute name="MFR" value="SMC Diode"/>
+<attribute name="MPN" value="10BQ030TR"/>
+</part>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
-<part name="U1" library="linear" deviceset="MC33269ST*" device="" technology="-3.3T3" value="NCP1117ST50T3G"/>
+<part name="U1" library="linear" deviceset="MC33269ST*" device="" technology="-3.3T3" value="NCP1117ST50T3G">
+<attribute name="MFR" value="ON Semiconductor"/>
+<attribute name="MPN" value="NCP1117ST50T3G"/>
+</part>
 <part name="P+8" library="supply1" deviceset="+5V" device=""/>
-<part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805K" package3d_urn="urn:adsk.eagle:package:23681/2" value="100n"/>
+<part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805K" package3d_urn="urn:adsk.eagle:package:23681/2" value="100n">
+<spice>
+<pinmapping spiceprefix="C">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="MFR" value="Samsung"/>
+<attribute name="MPN" value="CL21B104KBCNNNC"/>
+</part>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
-<part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10K"/>
-<part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="1K"/>
-<part name="J2" library="pinhead" deviceset="PINHD-1X6" device=""/>
+<part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10K">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="MFR" value="Yageo"/>
+<attribute name="MPN" value="RC0805FR-0710KL"/>
+</part>
+<part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="1K">
+<spice>
+<pinmapping spiceprefix="R">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="MFR" value="Yageo"/>
+<attribute name="MPN" value="RC0805FR-071KL"/>
+</part>
+<part name="J2" library="pinhead" deviceset="PINHD-1X6" device="" value="1x6 M">
+<attribute name="MFR" value="Sullins"/>
+<attribute name="MPN" value="PRPC006SAAN-RC"/>
+</part>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
-<part name="J4" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="POWER_JACK" device="" package3d_urn="urn:adsk.eagle:package:38231/1"/>
+<part name="J4" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="POWER_JACK" device="" package3d_urn="urn:adsk.eagle:package:38231/1">
+<attribute name="MFR" value="CUI"/>
+<attribute name="MPN" value="PJ-202A"/>
+</part>
 <part name="H2" library="SparkFun-Hardware" library_urn="urn:adsk.eagle:library:519" deviceset="STAND-OFF" device="" package3d_urn="urn:adsk.eagle:package:38630/1"/>
 <part name="H3" library="SparkFun-Hardware" library_urn="urn:adsk.eagle:library:519" deviceset="STAND-OFF" device="" package3d_urn="urn:adsk.eagle:package:38630/1"/>
 <part name="H4" library="SparkFun-Hardware" library_urn="urn:adsk.eagle:library:519" deviceset="STAND-OFF" device="" package3d_urn="urn:adsk.eagle:package:38630/1"/>
 <part name="H1" library="SparkFun-Hardware" library_urn="urn:adsk.eagle:library:519" deviceset="STAND-OFF" device="" package3d_urn="urn:adsk.eagle:package:38630/1"/>
-<part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805K" package3d_urn="urn:adsk.eagle:package:23681/2" value="100n"/>
+<part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805K" package3d_urn="urn:adsk.eagle:package:23681/2" value="100n">
+<spice>
+<pinmapping spiceprefix="C">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="MFR" value="Samsung"/>
+<attribute name="MPN" value="CL21B104KBCNNNC"/>
+</part>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
-<part name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805K" package3d_urn="urn:adsk.eagle:package:23681/2" value="100n"/>
+<part name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805K" package3d_urn="urn:adsk.eagle:package:23681/2" value="100n">
+<spice>
+<pinmapping spiceprefix="C">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="MFR" value="Samsung"/>
+<attribute name="MPN" value="CL21B104KBCNNNC"/>
+</part>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="FRAME_B_L" device="" value="FRAME"/>
 <part name="TP1" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="PAD1-13" package3d_urn="urn:adsk.eagle:package:27946/1"/>
@@ -14764,9 +14857,30 @@ Source: AVX .. aphvc.pdf</description>
 <part name="TP4" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="PAD1-13" package3d_urn="urn:adsk.eagle:package:27946/1"/>
 <part name="TP5" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="PAD1-13" package3d_urn="urn:adsk.eagle:package:27946/1"/>
 <part name="P+4" library="supply1" deviceset="+5V" device=""/>
-<part name="Y1" library="SparkFun-Clocks" library_urn="urn:adsk.eagle:library:511" deviceset="CRYSTAL" device="SMD-HC49UP" package3d_urn="urn:adsk.eagle:package:37513/1" value="16 MHz"/>
-<part name="C7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805K" package3d_urn="urn:adsk.eagle:package:23681/2" value="18p"/>
-<part name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805K" package3d_urn="urn:adsk.eagle:package:23681/2" value="18p"/>
+<part name="Y1" library="SparkFun-Clocks" library_urn="urn:adsk.eagle:library:511" deviceset="CRYSTAL" device="SMD-HC49UP" package3d_urn="urn:adsk.eagle:package:37513/1" value="16 MHz">
+<attribute name="MFR" value="ECS"/>
+<attribute name="MPN" value="ECS-160-18-5PX-TR"/>
+</part>
+<part name="C7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805K" package3d_urn="urn:adsk.eagle:package:23681/2" value="18p">
+<spice>
+<pinmapping spiceprefix="C">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="MFR" value="Samsung"/>
+<attribute name="MPN" value="CL21C180JBANNNC"/>
+</part>
+<part name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805K" package3d_urn="urn:adsk.eagle:package:23681/2" value="18p">
+<spice>
+<pinmapping spiceprefix="C">
+<pinmap gate="G$1" pin="1" pinorder="1"/>
+<pinmap gate="G$1" pin="2" pinorder="2"/>
+</pinmapping>
+</spice>
+<attribute name="MFR" value="Samsung"/>
+<attribute name="MPN" value="CL21C180JBANNNC"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -14801,10 +14915,14 @@ E.g., the FTDI TTL-232R-5V.</text>
 <instance part="U4" gate="G$1" x="157.48" y="111.76" smashed="yes">
 <attribute name="VALUE" x="142.24" y="78.74" size="1.778" layer="96"/>
 <attribute name="NAME" x="142.24" y="140.462" size="1.778" layer="95"/>
+<attribute name="MFR" x="157.48" y="111.76" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="157.48" y="111.76" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="J1" gate="A" x="281.94" y="157.48" smashed="yes">
 <attribute name="NAME" x="275.59" y="163.195" size="1.778" layer="95"/>
 <attribute name="VALUE" x="275.59" y="149.86" size="1.778" layer="96"/>
+<attribute name="MFR" x="281.94" y="157.48" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="281.94" y="157.48" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="P+1" gate="1" x="294.64" y="165.1" smashed="yes">
 <attribute name="VALUE" x="296.545" y="167.64" size="1.778" layer="96" rot="R180"/>
@@ -14827,6 +14945,8 @@ E.g., the FTDI TTL-232R-5V.</text>
 <instance part="C2" gate="G$1" x="254" y="226.06" smashed="yes" rot="R180">
 <attribute name="NAME" x="243.84" y="228.6" size="1.778" layer="95"/>
 <attribute name="VALUE" x="243.84" y="226.06" size="1.778" layer="96"/>
+<attribute name="MFR" x="254" y="226.06" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="MPN" x="254" y="226.06" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
 <instance part="GND7" gate="1" x="254" y="218.44" smashed="yes">
 <attribute name="VALUE" x="251.46" y="215.9" size="1.778" layer="96"/>
@@ -14834,10 +14954,14 @@ E.g., the FTDI TTL-232R-5V.</text>
 <instance part="C1" gate="G$1" x="200.66" y="231.14" smashed="yes">
 <attribute name="NAME" x="203.2" y="228.6" size="1.778" layer="95"/>
 <attribute name="VALUE" x="203.2" y="226.06" size="1.778" layer="96"/>
+<attribute name="MFR" x="200.66" y="231.14" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="200.66" y="231.14" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="C3" gate="G$1" x="238.76" y="228.6" smashed="yes">
 <attribute name="NAME" x="231.14" y="228.0666" size="1.778" layer="95"/>
 <attribute name="VALUE" x="230.886" y="225.5266" size="1.778" layer="96"/>
+<attribute name="MFR" x="238.76" y="228.6" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="238.76" y="228.6" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND9" gate="1" x="200.66" y="218.44" smashed="yes">
 <attribute name="VALUE" x="198.12" y="215.9" size="1.778" layer="96"/>
@@ -14851,6 +14975,8 @@ E.g., the FTDI TTL-232R-5V.</text>
 <instance part="LED1" gate="G$1" x="266.7" y="228.6" smashed="yes">
 <attribute name="NAME" x="270.256" y="224.028" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="272.415" y="224.028" size="1.778" layer="96" rot="R90"/>
+<attribute name="MFR" x="266.7" y="228.6" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="266.7" y="228.6" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND14" gate="1" x="266.7" y="218.44" smashed="yes">
 <attribute name="VALUE" x="264.16" y="215.9" size="1.778" layer="96"/>
@@ -14861,6 +14987,8 @@ E.g., the FTDI TTL-232R-5V.</text>
 <instance part="D1" gate="G$1" x="190.5" y="236.22" smashed="yes">
 <attribute name="NAME" x="187.96" y="231.6226" size="1.778" layer="95"/>
 <attribute name="VALUE" x="187.96" y="228.8286" size="1.778" layer="96"/>
+<attribute name="MFR" x="190.5" y="236.22" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="190.5" y="236.22" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND11" gate="1" x="218.44" y="218.44" smashed="yes">
 <attribute name="VALUE" x="215.9" y="215.9" size="1.778" layer="96"/>
@@ -14868,6 +14996,8 @@ E.g., the FTDI TTL-232R-5V.</text>
 <instance part="U1" gate="G$1" x="218.44" y="231.14" smashed="yes">
 <attribute name="NAME" x="213.36" y="241.3" size="1.778" layer="95"/>
 <attribute name="VALUE" x="213.36" y="238.76" size="1.778" layer="96"/>
+<attribute name="MFR" x="218.44" y="231.14" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="218.44" y="231.14" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="P+8" gate="1" x="254" y="243.84" smashed="yes">
 <attribute name="VALUE" x="255.905" y="246.38" size="1.778" layer="96" rot="R180"/>
@@ -14875,6 +15005,8 @@ E.g., the FTDI TTL-232R-5V.</text>
 <instance part="C6" gate="G$1" x="127" y="104.14" smashed="yes" rot="R180">
 <attribute name="NAME" x="120.777" y="106.045" size="1.778" layer="95"/>
 <attribute name="VALUE" x="120.396" y="102.235" size="1.778" layer="96"/>
+<attribute name="MFR" x="127" y="104.14" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="MPN" x="127" y="104.14" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
 <instance part="GND4" gate="1" x="127" y="99.06" smashed="yes">
 <attribute name="VALUE" x="124.46" y="96.52" size="1.778" layer="96"/>
@@ -14882,14 +15014,20 @@ E.g., the FTDI TTL-232R-5V.</text>
 <instance part="R1" gate="G$1" x="137.16" y="162.56" smashed="yes" rot="R90">
 <attribute name="NAME" x="135.6614" y="158.75" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="140.462" y="158.75" size="1.778" layer="96" rot="R90"/>
+<attribute name="MFR" x="137.16" y="162.56" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="MPN" x="137.16" y="162.56" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="R3" gate="G$1" x="266.7" y="236.22" smashed="yes" rot="R90">
 <attribute name="NAME" x="265.2014" y="232.41" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="270.002" y="232.41" size="1.778" layer="96" rot="R90"/>
+<attribute name="MFR" x="266.7" y="236.22" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="MPN" x="266.7" y="236.22" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="J2" gate="A" x="274.32" y="81.28" smashed="yes">
 <attribute name="NAME" x="267.97" y="92.075" size="1.778" layer="95"/>
 <attribute name="VALUE" x="267.97" y="71.12" size="1.778" layer="96"/>
+<attribute name="MFR" x="274.32" y="81.28" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="274.32" y="81.28" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND5" gate="1" x="264.16" y="71.12" smashed="yes">
 <attribute name="VALUE" x="261.62" y="68.58" size="1.778" layer="96"/>
@@ -14897,6 +15035,8 @@ E.g., the FTDI TTL-232R-5V.</text>
 <instance part="J4" gate="G$1" x="165.1" y="228.6" smashed="yes">
 <attribute name="VALUE" x="154.94" y="238.76" size="1.778" layer="96" font="vector"/>
 <attribute name="NAME" x="154.94" y="228.6" size="1.778" layer="95" font="vector"/>
+<attribute name="MFR" x="165.1" y="228.6" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="165.1" y="228.6" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="H2" gate="G$1" x="149.86" y="15.24" smashed="yes"/>
 <instance part="H3" gate="G$1" x="149.86" y="12.7" smashed="yes"/>
@@ -14905,6 +15045,8 @@ E.g., the FTDI TTL-232R-5V.</text>
 <instance part="C4" gate="G$1" x="106.68" y="104.14" smashed="yes" rot="R180">
 <attribute name="NAME" x="100.457" y="106.045" size="1.778" layer="95"/>
 <attribute name="VALUE" x="98.806" y="103.505" size="1.778" layer="96"/>
+<attribute name="MFR" x="106.68" y="104.14" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="MPN" x="106.68" y="104.14" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
 <instance part="GND6" gate="1" x="106.68" y="99.06" smashed="yes">
 <attribute name="VALUE" x="104.14" y="96.52" size="1.778" layer="96"/>
@@ -14912,6 +15054,8 @@ E.g., the FTDI TTL-232R-5V.</text>
 <instance part="C5" gate="G$1" x="116.84" y="104.14" smashed="yes" rot="R180">
 <attribute name="NAME" x="110.617" y="106.045" size="1.778" layer="95"/>
 <attribute name="VALUE" x="110.236" y="102.235" size="1.778" layer="96"/>
+<attribute name="MFR" x="116.84" y="104.14" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="MPN" x="116.84" y="104.14" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
 <instance part="GND8" gate="1" x="116.84" y="99.06" smashed="yes">
 <attribute name="VALUE" x="114.3" y="96.52" size="1.778" layer="96"/>
@@ -14948,14 +15092,20 @@ E.g., the FTDI TTL-232R-5V.</text>
 <instance part="Y1" gate="G$1" x="93.98" y="127" smashed="yes" rot="R90">
 <attribute name="NAME" x="91.948" y="127" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="96.012" y="127" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+<attribute name="MFR" x="93.98" y="127" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="MPN" x="93.98" y="127" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="C7" gate="G$1" x="88.9" y="121.92" smashed="yes" rot="R270">
 <attribute name="NAME" x="86.995" y="115.697" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="89.535" y="114.046" size="1.778" layer="96" rot="R90"/>
+<attribute name="MFR" x="88.9" y="121.92" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="MPN" x="88.9" y="121.92" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="C8" gate="G$1" x="88.9" y="132.08" smashed="yes" rot="MR90">
 <attribute name="NAME" x="86.995" y="138.303" size="1.778" layer="95" rot="MR270"/>
 <attribute name="VALUE" x="89.535" y="139.954" size="1.778" layer="96" rot="MR270"/>
+<attribute name="MFR" x="88.9" y="132.08" size="1.778" layer="96" rot="MR90" display="off"/>
+<attribute name="MPN" x="88.9" y="132.08" size="1.778" layer="96" rot="MR90" display="off"/>
 </instance>
 </instances>
 <busses>
