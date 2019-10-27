@@ -14706,17 +14706,7 @@ Source: AVX .. aphvc.pdf</description>
 <class number="0" name="default" width="0.254" drill="0">
 <clearance class="0" value="0.254"/>
 </class>
-<class number="1" name="power" width="0.6096" drill="0.6096">
-<clearance class="1" value="0.254"/>
-</class>
-<class number="2" name="gnd" width="0.3048" drill="0.5588">
-<clearance class="2" value="0.254"/>
-</class>
-<class number="3" name="usbvcc" width="0.508" drill="0.6096">
-<clearance class="3" value="0.254"/>
-</class>
-<class number="4" name="aref" width="0.4064" drill="0.6096">
-<clearance class="4" value="0.254"/>
+<class number="4" name="test" width="0" drill="0">
 </class>
 </classes>
 <parts>
@@ -15257,7 +15247,7 @@ E.g., the FTDI TTL-232R-5V.</text>
 <junction x="147.32" y="154.94"/>
 </segment>
 </net>
-<net name="VIN" class="1">
+<net name="VIN" class="0">
 <segment>
 <wire x1="210.82" y1="236.22" x2="200.66" y2="236.22" width="0.1524" layer="91"/>
 <wire x1="200.66" y1="233.68" x2="200.66" y2="236.22" width="0.1524" layer="91"/>
@@ -15285,7 +15275,7 @@ E.g., the FTDI TTL-232R-5V.</text>
 <pinref part="R3" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="PWRIN" class="1">
+<net name="PWRIN" class="0">
 <segment>
 <wire x1="167.64" y1="236.22" x2="187.96" y2="236.22" width="0.1524" layer="91"/>
 <label x="180.34" y="236.22" size="1.778" layer="95"/>

@@ -1696,17 +1696,7 @@ Metric Code Size 2012</description>
 <class number="0" name="default" width="0.254" drill="0">
 <clearance class="0" value="0.254"/>
 </class>
-<class number="1" name="power" width="0.6096" drill="0.6096">
-<clearance class="1" value="0.254"/>
-</class>
-<class number="2" name="gnd" width="0.3048" drill="0.5588">
-<clearance class="2" value="0.254"/>
-</class>
-<class number="3" name="usbvcc" width="0.508" drill="0.6096">
-<clearance class="3" value="0.254"/>
-</class>
-<class number="4" name="aref" width="0.4064" drill="0.6096">
-<clearance class="4" value="0.254"/>
+<class number="4" name="test" width="0" drill="0">
 </class>
 </classes>
 <designrules name="oshpark-2layer">
@@ -2190,7 +2180,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="80.78" y1="23.9" x2="75.69" y2="18.81" width="0.3" layer="1"/>
 <wire x1="83.41" y1="23.9" x2="80.78" y2="23.9" width="0.3" layer="1"/>
 </signal>
-<signal name="VIN" class="1">
+<signal name="VIN">
 <contactref element="C1" pad="1"/>
 <contactref element="D1" pad="C"/>
 <contactref element="U1" pad="3"/>
@@ -2216,7 +2206,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="R3" pad="1"/>
 <wire x1="26.6" y1="15.55" x2="26.6" y2="13.45" width="0.4" layer="1"/>
 </signal>
-<signal name="PWRIN" class="1">
+<signal name="PWRIN">
 <contactref element="D1" pad="A"/>
 <contactref element="J4" pad="PWR"/>
 <wire x1="16" y1="15" x2="10.7" y2="15" width="1" layer="1"/>
