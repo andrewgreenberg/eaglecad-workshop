@@ -1,6 +1,6 @@
 # Make EAGLE 9 Sane (only need to do once!)
 
-2019/01/19 - From the `eaglecad-things` repo (written for EAGLE 9.2.2). Copy all files in the repo to the right place (SCR and DRU directories).
+2019/10/28 - From the `eaglecad-things` repo (written for EAGLE 9.5.1). Copy all files in the repo to the right place (SCR and DRU directories).
 
 ## Control Panel Setup
 
@@ -9,7 +9,8 @@
 - "Options" > "User Interface"
    - Make sure "Layout" has "Background: Black" (IMPORTANT!)
    - Make sure "Schematic has "Background: White"
-
+- "Open" > "Scripts" > "eagle.scr"
+   - Comment out `SCRIPT default-eagle.scr`
 
 ## Schematic Setup
 
@@ -21,7 +22,6 @@
    - Type `scr` to run a script.
    - Choose `assign-control-for-panning.scr` - now holding down the control key will pan!
 - Type `scr` to run a script
-- Choose `legacycolors` to make everything actually bearable.
 - Save, so that your changes save.
 
 ## Layout setup
@@ -34,5 +34,4 @@
    - Type `scr` to run a script.
    - Choose `assign-control-for-panning.scr` - now holding down the control key will pan!
 - Type `scr` to run a script
-- Choose `legacycolors` to make everything actually bearable.
 - Save, so that your changes save.

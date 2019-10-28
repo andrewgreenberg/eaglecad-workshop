@@ -1,8 +1,10 @@
 #!/bin/sh
 
 # Save me in /usr/loca/bin, and make sure it's executables (chmod +x eagle)
-# Note: sometimes QT_AUTO_SCREEN_SCALE_FACTOR=0 is helpful, too.
+# Note: sometimes QT_SCALE_FACTOR=0.5 and QT_AUTO_SCREEN_SCALE_FACTOR=0 are helpful.
+# Also, be sure to uncheck:
+#    Control Panel > Options > User Interface > 'Enable High DPI Scaling' and 'Enable Auto Screen Scale Factor'
 
-export LIBGL_ALWAYS_SOFTWARE=1 QT_SCALE_FACTOR=0.5
-path/to/eagle-9.3.0/eagle "$@"
+export LIBGL_ALWAYS_SOFTWARE=1 
+path/to/eagle-9.5.1/eagle "$@"
 
