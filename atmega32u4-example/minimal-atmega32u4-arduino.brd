@@ -2140,17 +2140,17 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="39.646" y="3.567" size="0.625" layer="25" font="vector" ratio="20" align="bottom-center"/>
 <attribute name="VALUE" x="39.6" y="4.233" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
-<element name="C16" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0805K" package3d_urn="urn:adsk.eagle:package:23681/2" value="18p" x="35.8" y="3.1" smashed="yes">
-<attribute name="DESC" value="CAP CER 18PF 50V C0G/NP0 0805" x="35.8" y="3.1" size="1.778" layer="27" display="off"/>
+<element name="C16" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0805K" package3d_urn="urn:adsk.eagle:package:23681/2" value="30p" x="35.8" y="3.1" smashed="yes">
+<attribute name="DESC" value="CAP CER 30PF 50V C0G/NP0 0805" x="35.8" y="3.1" size="1.778" layer="27" display="off"/>
 <attribute name="MFR" value="Samsung" x="-5" y="-37.7" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="CL21C180JBANNNC" x="-5" y="-37.7" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="CL21C300JBANNNC" x="-5" y="-37.7" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="34.9" y="1.375" size="0.625" layer="25" font="vector" ratio="20"/>
 <attribute name="POPULARITY" value="52" x="-5" y="-37.7" size="1.778" layer="27" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="-5" y="-37.7" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="34.8" y="1.2" size="1.016" layer="27"/>
 </element>
-<element name="C17" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0805K" package3d_urn="urn:adsk.eagle:package:23681/2" value="18p" x="43.4" y="3.1" smashed="yes" rot="R180">
-<attribute name="DESC" value="CAP CER 18PF 50V C0G/NP0 0805" x="43.4" y="3.1" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="C17" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0805K" package3d_urn="urn:adsk.eagle:package:23681/2" value="30p" x="43.4" y="3.1" smashed="yes" rot="R180">
+<attribute name="DESC" value="CAP CER 30PF 50V C0G/NP0 0805" x="43.4" y="3.1" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MFR" value="Samsung" x="88" y="48.7" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="CL21C180JBANNNC" x="88" y="48.7" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="42.6" y="1.375" size="0.625" layer="25" font="vector" ratio="20"/>

@@ -15341,28 +15341,31 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="TP5" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="PAD1-13" package3d_urn="urn:adsk.eagle:package:27946/1"/>
 <part name="P+4" library="supply1" deviceset="+5V" device=""/>
 <part name="X1" library="SparkFun-Clocks" library_urn="urn:adsk.eagle:library:511" deviceset="CRYSTAL" device="SMD-HC49UP" package3d_urn="urn:adsk.eagle:package:37513/1" value="16 MHz">
+<attribute name="DESC" value="CRYSTAL 16.000 MHZ 18PF SMD"/>
 <attribute name="MFR" value="ECS"/>
 <attribute name="MPN" value="ECS-160-18-5PX-TR"/>
 </part>
-<part name="C7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805K" package3d_urn="urn:adsk.eagle:package:23681/2" value="18p">
+<part name="C7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805K" package3d_urn="urn:adsk.eagle:package:23681/2" value="30p">
 <spice>
 <pinmapping spiceprefix="C">
 <pinmap gate="G$1" pin="1" pinorder="1"/>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
+<attribute name="DESC" value="CAP CER 30PF 50V C0G/NP0 0805"/>
 <attribute name="MFR" value="Samsung"/>
 <attribute name="MPN" value="CL21C180JBANNNC"/>
 </part>
-<part name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805K" package3d_urn="urn:adsk.eagle:package:23681/2" value="18p">
+<part name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805K" package3d_urn="urn:adsk.eagle:package:23681/2" value="30p">
 <spice>
 <pinmapping spiceprefix="C">
 <pinmap gate="G$1" pin="1" pinorder="1"/>
 <pinmap gate="G$1" pin="2" pinorder="2"/>
 </pinmapping>
 </spice>
+<attribute name="DESC" value="CAP CER 30PF 50V C0G/NP0 0805"/>
 <attribute name="MFR" value="Samsung"/>
-<attribute name="MPN" value="CL21C180JBANNNC"/>
+<attribute name="MPN" value="CL21C300JBANNNC"/>
 </part>
 <part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="1K">
 <spice>
@@ -15685,18 +15688,21 @@ Attribution ShareAlike (CC BY-SA)</text>
 <attribute name="VALUE" x="75.692" y="118.11" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 <attribute name="MFR" x="73.66" y="118.11" size="1.778" layer="96" rot="R90" display="off"/>
 <attribute name="MPN" x="73.66" y="118.11" size="1.778" layer="96" rot="R90" display="off"/>
+<attribute name="DESC" x="73.66" y="118.11" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="C7" gate="G$1" x="68.58" y="113.03" smashed="yes" rot="R270">
 <attribute name="NAME" x="66.675" y="106.807" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="69.215" y="105.156" size="1.778" layer="96" rot="R90"/>
 <attribute name="MFR" x="68.58" y="113.03" size="1.778" layer="96" rot="R270" display="off"/>
 <attribute name="MPN" x="68.58" y="113.03" size="1.778" layer="96" rot="R270" display="off"/>
+<attribute name="DESC" x="68.58" y="113.03" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="C8" gate="G$1" x="68.58" y="123.19" smashed="yes" rot="MR90">
 <attribute name="NAME" x="66.675" y="129.413" size="1.778" layer="95" rot="MR270"/>
 <attribute name="VALUE" x="69.215" y="131.064" size="1.778" layer="96" rot="MR270"/>
 <attribute name="MFR" x="68.58" y="123.19" size="1.778" layer="96" rot="MR90" display="off"/>
 <attribute name="MPN" x="68.58" y="123.19" size="1.778" layer="96" rot="MR90" display="off"/>
+<attribute name="DESC" x="68.58" y="123.19" size="1.778" layer="96" rot="MR90" display="off"/>
 </instance>
 <instance part="R2" gate="G$1" x="212.09" y="77.47" smashed="yes" rot="R180">
 <attribute name="NAME" x="208.28" y="78.74" size="1.778" layer="95"/>

@@ -13864,13 +13864,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="MFR" value="ECS"/>
 <attribute name="MPN" value="ECS-160-18-5PX-TR"/>
 </part>
-<part name="C16" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805K" package3d_urn="urn:adsk.eagle:package:23681/2" value="18p">
-<attribute name="DESC" value="CAP CER 18PF 50V C0G/NP0 0805"/>
+<part name="C16" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805K" package3d_urn="urn:adsk.eagle:package:23681/2" value="30p">
+<attribute name="DESC" value="CAP CER 30PF 50V C0G/NP0 0805"/>
 <attribute name="MFR" value="Samsung"/>
-<attribute name="MPN" value="CL21C180JBANNNC"/>
+<attribute name="MPN" value="CL21C300JBANNNC"/>
 </part>
-<part name="C17" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805K" package3d_urn="urn:adsk.eagle:package:23681/2" value="18p">
-<attribute name="DESC" value="CAP CER 18PF 50V C0G/NP0 0805"/>
+<part name="C17" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805K" package3d_urn="urn:adsk.eagle:package:23681/2" value="30p">
+<attribute name="DESC" value="CAP CER 30PF 50V C0G/NP0 0805"/>
 <attribute name="MFR" value="Samsung"/>
 <attribute name="MPN" value="CL21C180JBANNNC"/>
 </part>
