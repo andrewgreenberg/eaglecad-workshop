@@ -1,6 +1,6 @@
 # Andrew's EAGLE CAD Workshop
 
-You really want to hear me rant for 3 hours straight? OK, I warned you ;)
+You really want to hear me rant for 3 hours straight? OK, I warned you ;) These workshops are intensive 3 hour courses designed to get you going on making circuit boards.
 
 ## Getting Ready
 
@@ -11,12 +11,16 @@ You really want to hear me rant for 3 hours straight? OK, I warned you ;)
 
 ## Workshop overview
 
-- What are schematics
-- Schematics that don't suck
-- Making schematics in EAGLE
-- What are PCBs
-- Layouts that don't suck
-- Laying out boards in EAGLE
+- Schematics!
+   - What are schematics
+   - Schematics that don't suck
+   - Making schematics in EAGLE
+   - Schematic Checklist
+- PCB layout!
+   - What are PCBs
+   - Layouts that don't suck
+   - Laying out boards in EAGLE
+   - Layout Checklist
 
 
 
