@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="2" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -14053,7 +14053,7 @@ Attribution ShareAlike (CC BY-SA)</text>
 <wire x1="365.76" y1="58.42" x2="365.76" y2="90.17" width="0.1524" layer="97"/>
 <wire x1="365.76" y1="90.17" x2="320.04" y2="90.17" width="0.1524" layer="97"/>
 <text x="339.09" y="63.5" size="2.54" layer="97">ICSP</text>
-<text x="322.58" y="60.96" size="1.778" layer="97">REQUIRED to program ATMEGA328P</text>
+<text x="321.31" y="60.96" size="1.778" layer="97">REQUIRED to program ATMEGA32U4</text>
 <text x="269.24" y="77.47" size="1.778" layer="97" rot="R90">USB RX</text>
 <text x="293.37" y="77.47" size="1.778" layer="97" rot="R90">USB TX</text>
 <text x="275.59" y="40.64" size="1.778" layer="97" rot="R90">USER</text>
